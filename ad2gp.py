@@ -25,6 +25,7 @@ def main():
 
     args = parser.parse_args()
     midi_file = open_file(args.file)
+    midi_file = convert(midi_file)
     midi_file.save('converted.mid')
 
 
